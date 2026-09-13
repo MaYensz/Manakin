@@ -30,6 +30,32 @@ header nav a {
   margin-right: 16px;
 }
 
+/* Hero Section Styles */
+.hero-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.hero-secondary {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #303030;
+}
+
+.hero-welcome {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #303030
+}
+
+/*--End Hero Section Styles--*/
+
 h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 800;
