@@ -1,9 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Georgia, serif;
   color: #303030;
   background-color: #F7F3F5;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -31,6 +38,7 @@ header nav a {
 }
 
 /* Hero Section Styles */
+
 .hero-title {
   font-family: "Barlow", sans-serif;
   font-weight: 800;
@@ -55,8 +63,19 @@ header nav a {
   font-size: 24px;
   color: #303030;
   margin-bottom: 10px;
+
 }
 
+section.hero {
+  margin-top: 180px;
+  padding:60px 40px;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.herocontent {
+  max-width: 600px;
+}
 
 /*--End Hero Section Styles--*/
 
@@ -81,22 +100,12 @@ p {
   font-style: normal;
   font-size: 16px;
 }
+
 main {
   max-width: 1100px;
   padding: 10px 20px;
 }
 
-
-section.hero {
-  margin-top: 180px;
-  padding:60px 40px;
-  display: flex;
-  justify-content:flex-start;
-}
-
-.herocontent {
-  max-width: 600px;
-}
 
 footer {
   text-align: center;
@@ -105,3 +114,5 @@ footer {
   padding: 20px;
   margin-top: auto;
 }
+
+
