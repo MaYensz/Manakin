@@ -98,3 +98,10 @@ section.hero {
   max-width: 600px;
 }
 
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #303030;
+  padding: 20px;
+  margin-top: auto;
+}
