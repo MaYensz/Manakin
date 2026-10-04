@@ -18,7 +18,7 @@
                 <a href="about.html">About</a>
                 <a href="resources.html">Resources</a>
                 <a href="contact.html" aria-current="page">Contact</a>
-                <a href="request-appointment.html">
+                <a href="contact.html#appointment-form">
                 <button class="book-btn">Book an Appointment</button>
                 </a>
             </nav>
@@ -32,6 +32,83 @@
         <p>
             Our clinic opperates by appointment only. Give us a call to book your pet's exam in advance.
         </p>
+        <h2>Request an Appointment</h2>
+        <p>
+            Please fill out the form below to request an appointment with our veterinary team.
+        </p>
+        <form action="https://formspree.io/f/your-form-id" method="post">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="John Doe" id="name" name="name" required>
+
+        <label for="pet-name">Pet's Name:</label>
+        <input type="text" placeholder="Buddy" id="pet-name" name="pet-name" required>
+
+        <label for="pet-age">Pet's Age:</label>
+        <input type="number" placeholder="e.g., 3" id="pet-age" name="pet-age" required>
+
+        <p>Species:</p>
+        <div class="form-radio">
+            <input type="radio" id="dog" name="species" value="Dog" required>
+            <label for="dog">Dog</label>
+        </div>
+        <div class="form-radio">
+            <input type="radio" id="cat" name="species" value="Cat" required>
+            <label for="cat">Cat</label>
+        </div>
+
+        <div class="form-radio">
+            <input type="radio" id="other" name="species" value="Other" required>
+            <label for="other">Other</label>
+        </div>
+
+        <p>Pet's Sex:</p>
+        <div class="form-radio">
+            <input type="radio" id="male" name="pet-sex" value="Male">
+            <label for="male">Male</label>
+        </div>
+
+        <div class="form-radio">
+            <input type="radio" id="female" name="pet-sex" value="Female">
+            <label for="female">Female</label>
+        </div>
+        
+        <p>Has your pet seen us before?</p>
+        <div class="form-radio">
+            <input type="radio" id="yes" name="seen-before" value="Yes">
+            <label for="yes">Yes</label>
+        </div>
+
+        <div class="form-radio">
+            <input type="radio" id="no" name="seen-before" value="No">
+            <label for="no">No</label>
+        </div>
+
+        <label for="appointment-date">Preferred Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" placeholder="john.doe@example.com" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" placeholder="(555) 555-5555" id="phone" name="phone" required>
+
+        <label for="message">Problem/Reason for Visit:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="form-radio">
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="contact-email" name="contact-method" value="Email">
+            <label for="contact-email">Email</label>
+        </div>
+
+        <div class="form-radio">
+            <input type="radio" id="contact-phone" name="contact-method" value="Phone">
+            <label for="contact-phone">Phone</label>
+        </div>
+
+        <p>If your pet is experiencing an emergency, please call us immediately at (804) 000-0000.</p>
+        <button type="submit">Request Appointment</button>
+        </form>
     </main>
 
     <footer>
