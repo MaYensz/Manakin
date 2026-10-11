@@ -152,7 +152,7 @@ p {
 }
 
 main {
-  max-width: 1100px;
+  max-width: 70%;
   padding: 40px 20px;
   margin: 0 auto;
 }
@@ -295,9 +295,9 @@ textarea {
 
 .service {
   display: flex;
-  align-items:flex-start;
+  align-items:center;
   gap: 20px;
-  padding:20px
+  padding:20px;
 }
 
 .service img {
@@ -310,6 +310,7 @@ textarea {
 
 .service-text h2{
   color: #673245;
+
 }
 
 .header-image{
@@ -332,4 +333,37 @@ textarea {
 .services-header p{
   max-width: 600px;
   color: #ffffff;
+}
+
+.background-srvfooter{
+  position:relative;
+  background-image: linear-gradient(rgba(103, 50, 69, 0.5), rgba(103, 50, 69, 0.623)), url('../img/servicefootbackground.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  margin-bottom:40px;
+  padding: 60px 40px;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  justify-items:center;
+  text-align:left;
+}
+
+.background-srvfooter video{  
+  width: auto;
+  height: 200px;
+  border-radius: 70px;
+}
+
+
+.background-srvfooter h1{
+  color: #ffffff;
+}
+
+.media-sources p{
+  line-height: 0.4;
+}
+
+.media-sources h2{
+  color: #673245;
 }
