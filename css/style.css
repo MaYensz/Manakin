@@ -367,3 +367,31 @@ textarea {
 .media-sources h2{
   color: #673245;
 }
+
+.background-geofooter {
+  position: relative;
+  background-image: linear-gradient(rgba(103, 50, 69, 0.5), rgba(103, 50, 69, 0.623)), url('../img/servicefootbackground.jpg');
+  background-size: cover;
+  background-position: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.background-geofooter h1 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.background-geofooter h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#location-result {
+  margin-top: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
