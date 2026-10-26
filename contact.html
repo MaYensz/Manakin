@@ -25,6 +25,7 @@
     </header>
 
     <main id="main-content">
+        
         <h2>Contact Us</h2>
         <p>
             Contact Manakin Sabot Veterinary Clinic for any inquiries, appointment requests, or to discuss your pet's health needs. Our dedicated team is here to provide you with the best care and support for your furry friends.
@@ -109,6 +110,16 @@
         <p>If your pet is experiencing an emergency, please call us immediately at (804) 000-0000.</p>
         <button type="submit">Request Appointment</button>
         </form>
+
+        <div class="background-geofooter">
+        <div class="footer-btn">
+            <h1>Connect With Us Locally</h1>
+            <h2>Click below to share your location and see a personalized greeting for your visit:</h2>
+            <button type="button" class="book-btn" onclick="getLocation()">Fetch My Location</button>
+            <h2 id="location-message"></h2>
+        </div>
+        </div>
+
     </main>
 
     <footer>
@@ -116,6 +127,23 @@
         <p><a href="style-tile.html">View this project's style tile</a></p>
     </footer>
     
+<script>
+    function getLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+    }
+
+    function showPosition(position) {
+    var lat = position.coords.latitude.toFixed(1);
+    var lon = position.coords.longitude.toFixed(1);
+    document.getElementById("location-message").textContent =
+    "You're near " + lat + ", " + lon + ". Manakin Sabot Veterinary Clinic is located near Short Pump Towne Center so be prepared for some traffic.";
+    }
+
+    function showError(error) {
+    document.getElementById("location-message").textContent =
+    "We were unable to fetch your location.";
+    }
+</script>
 
 </body>
 </html>
