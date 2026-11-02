@@ -395,3 +395,57 @@ textarea {
   font-weight: 500;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .clinic-title {
+    text-align: center;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  main {
+    max-width: 90%;
+    padding: 20px 10px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .background-srvfooter {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .background-srvfooter video {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .media-sources p{
+    line-height: 1.2;
+  }
+}
