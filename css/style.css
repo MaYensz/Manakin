@@ -390,6 +390,10 @@ textarea {
   margin-bottom: 20px;
 }
 
+.footer-card {
+   color: #ffffff;
+}
+
 #location-result {
   margin-top: 20px;
   font-weight: 500;
