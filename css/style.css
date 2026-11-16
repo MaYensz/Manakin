@@ -46,6 +46,7 @@ header {
 
 .clinic-title {
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 /*--call to action button styles--*/
@@ -85,6 +86,7 @@ nav a[aria-current="page"] {
   font-style: normal;
   font-size: 50px;
   margin: 0;
+  color: #ffffff;
 }
 
 .hero-secondary {
@@ -155,6 +157,7 @@ main {
   max-width: 70%;
   padding: 40px 20px;
   margin: 0 auto;
+  flex: 1;
 }
 
 /*--Resources Emergency Center Table Styles--*/
@@ -355,6 +358,9 @@ textarea {
   border-radius: 70px;
 }
 
+.page-title {
+  color: white;
+}
 
 .background-srvfooter h1{
   color: #ffffff;
@@ -406,10 +412,19 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    margin-right: 0;
+  }
+  .book-btn {
+    margin: 10px auto 0 auto;
+    display: inline-block;
   }
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
   }
 
