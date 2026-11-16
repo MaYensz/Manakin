@@ -480,8 +480,8 @@ textarea {
   }
 
   .background-srvfooter video {
-    height: auto;
-    width: 200px;
+    width: auto;
+    height: 200px;
     max-width: none;
   }
 
