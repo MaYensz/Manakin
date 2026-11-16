@@ -39,14 +39,16 @@ header {
   background-color: #673245;
   color: #ffffff;
   padding: 20px;
-  display:flex;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 15px
 }
 
 .clinic-title {
   margin-bottom: 0;
   color: #ffffff;
+  text-align: center;
 }
 
 /*--call to action button styles--*/
@@ -61,15 +63,25 @@ header {
   border-radius: 100px;
   cursor: pointer;
   text-decoration: none;
+  margin: 10px auto 0 auto;
+  display: inline-block;
 }
-
 
 
 /*--end call to action button styles--*/
 
+  header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }  
+
 header nav a {
   color: #E7D9DF;
-  margin-right: 16px;
+  margin-right: 0;
   text-decoration: none;
   font-weight: 500;
 }
@@ -121,7 +133,7 @@ section.hero {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 60px 40px 40px 40px;
+  padding: 40px 20px;
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -154,8 +166,8 @@ p {
 }
 
 main {
-  max-width: 70%;
-  padding: 40px 20px;
+  max-width: 90%;
+  padding: 20px 10px;
   margin: 0 auto;
   flex: 1;
 }
@@ -230,12 +242,10 @@ label {
 }
 
 
+
 button[type="submit"] {
   display: block;
   margin-top: 2rem;
-}
-
-button[type="submit"] {
   background-color: #FBB02D;
   color: #303030;
   border: none;
@@ -289,16 +299,19 @@ textarea {
 }
 
 /*--Services Page Styles--*/
+
 .services-container {
   display: grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns:repeat: 1fr;
+  gap: 20px;
   max-width: 1200px;
 }
 
 .service {
   display: flex;
+  flex-direction: column;
   align-items:center;
+  text-align: center;
   gap: 20px;
   padding:20px;
 }
@@ -339,7 +352,7 @@ textarea {
 }
 
 .background-srvfooter{
-  position:relative;
+  position: relative;
   background-image: linear-gradient(rgba(103, 50, 69, 0.5), rgba(103, 50, 69, 0.623)), url('../img/servicefootbackground.jpg');
   background-size: cover;
   background-position: center;
@@ -347,14 +360,16 @@ textarea {
   margin-bottom:40px;
   padding: 60px 40px;
   display:grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns: 1fr;
   justify-items:center;
   text-align:left;
+  gap: 20px;
 }
 
 .background-srvfooter video{  
-  width: auto;
-  height: 200px;
+  width: 100%;
+  height: auto;
+  max-width: 250px
   border-radius: 70px;
 }
 
@@ -406,65 +421,72 @@ textarea {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  header nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav a {
-    margin-right: 0;
-  }
-  .book-btn {
-    margin: 10px auto 0 auto;
-    display: inline-block;
-  }
+@media (min-width: 600px) {
+  
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+   }
+
+  header nav a {
+    margin-right: 16px;
   }
 
   .clinic-title {
-    text-align: center;
+    text-align: left;
   }
 
+  .book-btn {
+     margin: 0;
+  }
+
+   section.hero {
+   padding: 60px 40px;
+   }
+
   .hero {
-    height: auto;
-    padding: 40px 20px;
+    height: 600px;
+    padding: 60px 40px 40px 40px;
   }
 
   main {
-    max-width: 90%;
-    padding: 20px 10px;
+    max-width: 70%;
+    padding: 40px 20px;
   }
 
   .services-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .service {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
   }
 
   .background-srvfooter {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat (2, 1fr);
     text-align: center;
-    gap: 20px;
+    text-align: left;
+    gap: 0;
   }
 
   .background-srvfooter video {
     height: auto;
-    width: 100%;
-    max-width: 250px;
+    width: 200px;
+    max-width: none;
   }
 
   .media-sources p{
-    line-height: 1.2;
+    line-height: 0.4;
   }
 }
+
